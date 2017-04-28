@@ -10,6 +10,7 @@ h1{
 h2{
   font-family: 'Short Stack', cursive;
   font-size: 3em;
+  text-align: center;
 }
 
 h3{
@@ -21,17 +22,6 @@ h3{
 h5 a{
   color: white;
   font-size: 2em;
-}
-
-.btn{
-  font-family: 'Kranky', cursive;
-  font-size: 2.5em;
-  color: white;
-  background-color: #FF1493;
-}
-
-h2{
-  text-align: center;
 }
 
 .jumbotron{
@@ -88,11 +78,31 @@ img.cartoon-dictionary{
   from { -moz-transform: rotate(0deg); }
   to { -moz-transform: rotate(360deg); }
 }
+
 @-webkit-keyframes spin {
   from { -webkit-transform: rotate(0deg); }
   to { -webkit-transform: rotate(360deg); }
 }
+
 @keyframes spin {
   from {transform:rotate(0deg);}
   to {transform:rotate(360deg);}
+}
+
+.btn{
+  font-family: 'Kranky', cursive;
+  font-size: 2.5em;
+  color: white;
+  background-color: #FF1493;
+}
+
+footer{
+  min-height: 200px;
+  background-color: #00FF00;
+  margin: 0;
+}
+
+footer h3{
+  font-size: 3em;
+  padding: 30px 0 15px 0;
 }

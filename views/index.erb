@@ -1,13 +1,13 @@
 <h2>Create a personalized dictionary with words you would like to learn!</h2><br>
 <img class='cartoon-dictionary' src='/img/dictionary.jpg' alt='cartoon dictionary image'/>
 
-<h3>Your Words:</h3><br>
+<h3>Your Words:</h3><br><br><br>
 
 <% @words.each do |word| %>
   <h5><a href='/words/<%=word.id%>'><%= word.name %> (<%=word.type%>)</a></h5>
 <% end %>
 
-<br>
+<br><br><br><br>
 <a href='/words/new' class="btn btn-default">Add a word</a>
 <hr>
 <a href='/flashcard' class="btn btn-default">Test Yourself with Flashcards!</a>
