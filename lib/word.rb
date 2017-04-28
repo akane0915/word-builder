@@ -35,5 +35,7 @@ class Word
     @definitions.push(definition)
   end
 
-
+  def self.sort
+    @@words.sort_by!{ |word| word.name.downcase }
+  end
 end #class Word end

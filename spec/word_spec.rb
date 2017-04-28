@@ -77,4 +77,17 @@ describe(Word) do
         expect(test_word.definitions).to(eq([test_definition]))
       end
     end
+
+    describe('.sort') do
+      it('sorts the words array alphabetically') do
+        test_word = Word.new({:name => 'discover', :type => 'verb'})
+        test_word.save
+        test_word2 = Word.new({:name => 'ambition', :type => 'noun'})
+        test_word2.save
+        test_word3 = Word.new({:name => 'alliteration', :type => 'noun'})
+        test_word3.save
+        Word.sort
+        expect(Word.all).to(eq([test_word3, test_word2, test_word]))
+      end
+    end
 end #Class Word end
