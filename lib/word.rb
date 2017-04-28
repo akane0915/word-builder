@@ -1,11 +1,12 @@
 class Word
   @@words = []
-  attr_reader(:name, :type, :id)
+  attr_reader(:name, :type, :id, :definitions)
 
   def initialize (attributes)
     @name = attributes.fetch(:name)
     @type = attributes.fetch(:type)
     @id = @@words.length + 1
+    @definitions = []
   end
 
   def self.all
@@ -28,6 +29,10 @@ class Word
       end
     end
     matched_word
+  end
+
+  def add_definition
+    ####put code here after writing Definition class
   end
 
 

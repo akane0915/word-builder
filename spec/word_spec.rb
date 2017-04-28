@@ -59,4 +59,19 @@ describe(Word) do
         expect(Word.find(test_word.id)).to(eq(test_word))
       end
     end
+
+    describe('#definitions') do
+      it('returns all definitions for a word; it is empty to start') do
+        test_word = Word.new({:name => 'discover', :type => 'verb'})
+        expect(test_word.definitions).to(eq([]))
+      end
+    end
+
+    describe('#add_definition') do
+      it('adds a definition to a word') do
+
+
+        ####put code here after writing Definition class
+      end
+    end
 end #Class Word end
