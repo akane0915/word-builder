@@ -1,3 +1,98 @@
+body{
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+}
+
+h1{
+  font-family: 'Cutive', serif;
+}
+
+h2{
+  font-family: 'Short Stack', cursive;
+  font-size: 3em;
+}
+
+h3{
+  font-family: 'Kranky', cursive;
+  font-size: 5em;
+  color: white;
+}
+
+h5 a{
+  color: white;
+  font-size: 2em;
+}
+
+.btn{
+  font-family: 'Kranky', cursive;
+  font-size: 2.5em;
+  color: white;
+  background-color: #FF1493;
+}
+
 h2{
   text-align: center;
+}
+
+.jumbotron{
+  background-image: url('../img/jumbotron.jpeg');
+  background-position: bottom;
+  background-size: cover;
+  min-height: 320px;
+  font-size: 5em;
+  text-align: left;
+  margin: 0;
+  padding-bottom: 0;
+}
+
+.jumbotron h1 {
+  color: white;
+  padding-top: 300px;
+  font-size: 1.3em;
+}
+
+.main-content{
+  background-color: #0BB5FF;
+  padding: 50px 0 100px 0;
+  min-height: 700px;
+}
+
+label{
+  font-size: 2em;
+}
+
+ul{
+  text-align: left;
+  font-size: 2em;
+}
+
+img.cartoon-dictionary{
+  margin: 30px;
+  width: 200px;
+  -webkit-animation-name: spin;
+  -webkit-animation-duration: 8000ms;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  -moz-animation-name: spin;
+  -moz-animation-duration: 8000ms;
+  -moz-animation-iteration-count: infinite;
+  -moz-animation-timing-function: linear;
+  -ms-animation-name: spin;
+  -ms-animation-duration: 8000ms;
+  -ms-animation-iteration-count: infinite;
+  -ms-animation-timing-function: linear;
+  -o-transition: rotate(3600deg);
+}
+
+@-moz-keyframes spin {
+  from { -moz-transform: rotate(0deg); }
+  to { -moz-transform: rotate(360deg); }
+}
+@-webkit-keyframes spin {
+  from { -webkit-transform: rotate(0deg); }
+  to { -webkit-transform: rotate(360deg); }
+}
+@keyframes spin {
+  from {transform:rotate(0deg);}
+  to {transform:rotate(360deg);}
 }

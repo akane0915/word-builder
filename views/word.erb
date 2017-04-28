@@ -1,7 +1,10 @@
-<h2><%=@word.name%></h2>
+<img class='cartoon-dictionary' src='/img/dictionary.jpg' alt='cartoon dictionary image'/>
 <br>
 
-<h4>Definition(s): </h4>
+<h3><%=@word.name%></h3>
+<br>
+
+<h2>Definition(s): </h2>
 
 <ul>
   <%@word.definitions.each do |definition|%>
