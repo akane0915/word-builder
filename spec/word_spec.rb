@@ -30,14 +30,16 @@ describe(Word) do
 
   describe('#save') do
     it('saves a word to the words array') do
-      test_word = Word.new({:name => 'discover', :type => 'verb'}).save
-      expect(Word.all).to(eq(test_word))
+      test_word = Word.new({:name => 'discover', :type => 'verb'})
+      test_word.save
+      expect(Word.all).to(eq([test_word]))
     end
   end
 
     describe('.clear') do
       it('clears the words array') do
-        test_word = Word.new({:name => 'discover', :type => 'verb'}).save
+        test_word = Word.new({:name => 'discover', :type => 'verb'})
+        test_word.save
         Word.clear
         expect(Word.all).to(eq([]))
       end
