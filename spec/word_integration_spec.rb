@@ -1,17 +1,21 @@
-require "capybara/rspec"
-require "./app"
+require 'capybara/rspec'
+require './app'
 
 Capybara.app = Sinatra::Application
 set(:show_exceptions, false)
 
-# example integration test
+describe('the word path', {:type => :feature}) do
+  it('visits the homepage and clicks Add New Word button') do
+    visit('/')
+    click_link('Add a word')
+    expect(page).to have_content('Add a Word to Your Dictionary:')
+  end
 
-# describe("the phrase parser path", {:type => :feature}) do
-#   it("processes the user input and returns correct message if its a palindrome") do
-#     visit("/")
-#     fill_in("phrase1", :with => "madam")
-#     fill_in("phrase2", :with => "anagram")
-#     click_button("what am i?")
-#     expect(page).to have_content("'madam' is a palindrome")
-#   end
-# end
+  it('visits the add word form and fills in form, then clicks Add Your Word button') do
+    visit('/words/new')
+    fill_in('name', :with => 'discover')
+    fill_in('type', :with => 'verb')
+    click_button('Add Your Word')
+    expect(page).to have_content("You've successfully added a word!")
+  end
+end
