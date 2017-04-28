@@ -20,6 +20,7 @@ post('/') do
   type = params.fetch('type')
   word = Word.new({:name => name, :type => type})
   word.save
+  Word.sort
   @words = Word.all
   erb(:success_word)
 end
