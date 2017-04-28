@@ -34,4 +34,10 @@ describe('the word path', {:type => :feature}) do
     expect(page).to have_content('Definition(s): find unexpectedly or in the course of a search')
   end
 
+  it('visits a word page and clicks the back to homepage button') do
+    visit('/words/1')
+    click_link('Back to Homepage')
+    expect(page).to have_content('Create a personalized dictionary with words you would like to learn! Your Words: discover (verb)')
+  end
+
 end
