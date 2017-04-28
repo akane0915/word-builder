@@ -31,8 +31,8 @@ class Word
     matched_word
   end
 
-  def add_definition
-    ####put code here after writing Definition class
+  def add_definition(definition)
+    @definitions.push(definition)
   end
 
 

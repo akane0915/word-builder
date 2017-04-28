@@ -71,9 +71,10 @@ describe(Word) do
 
     describe('#add_definition') do
       it('adds a definition to a word') do
-
-
-        ####put code here after writing Definition class
+        test_word = Word.new({:name => 'discover', :type => 'verb'})
+        test_definition = Definition.new({:text => 'find unexpectedly or in the course of a search'})
+        test_word.add_definition(test_definition)
+        expect(test_word.definitions).to(eq([test_definition]))
       end
     end
 end #Class Word end
