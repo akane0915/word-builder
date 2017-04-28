@@ -1,14 +1,14 @@
 # _The Word Definer_
 
-#### _A web application to allow users to input a word and then define the word.  The application allows users to store multiple words and multiple definitions for each word.  This application is currently deployed via Heroku and viewable at                  . April 21, 2017_
+#### _A web application to allow users to input a word and then define the word.  The application allows users to store multiple words and multiple definitions for each word.  This application is currently deployed via Heroku and viewable at https://powerful-lake-46178.herokuapp.com/. April 21, 2017_
 
 #### By _**Asia Kane**_
 
 ## Description
 
-This application is built for children as the intended audience.  Its purpose is to allow children to create a list of words they don't know, but would like to learn.  After researching the definition(s) of the word, the child is able to store these definitions for the word.  The application
+This application is built for children as the intended audience.  Its purpose is to allow children to create a list of words they don't know, but would like to learn.  After researching the definition(s) of the word, the child is able to store these definitions for the word.  The application also allows children to view flashcards of the words to practice learning them!
 
-The application contains two classes: Word and Definition. The homepage of the app lists all words. When a word is clicked, it leads to a page with the words definition(s).
+The application contains two classes: Word and Definition. The homepage of the app lists all words. When a word is clicked, it leads to a page with the words definition(s).  All words are listed alphabetically.
 
 ### Prerequisites
 
@@ -32,7 +32,7 @@ Bundler
 
 ## Setup/Installation Requirements
 
-* _View the project at_
+* _View the project at https://powerful-lake-46178.herokuapp.com/_
 * _Or you can clone this repository to your machine, navigate to the file path in your terminal, and run app.rb by typing $ruby app.rb_
 * _Then you have the option to clone this repository_
 * _If you chose to clone the repository, after you run 'app.rb' you will need to copy the localhost path into your web browswer. The standard localhost for Sinatra is port 4567_
