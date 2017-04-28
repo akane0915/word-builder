@@ -1,9 +1,14 @@
-<h2><%=@word%></h2>
+<h2><%=@word.name%></h2>
+<br>
 
-<h3>Definition(s): </h3>
+<h4>Definition(s): </h4>
 
 <ul>
-  <%@word.definitions.each                %>
-  <li><%=%></li>
+  <%@word.definitions.each do |definition|%>
+  <li><%=definition.text%></li>
   <%end%>
 </ul>
+<br>
+
+<a class='btn btn-default' href='/words/<%=@word.id%>/definitions/new'>Add a definition</a><hr>
+<a class='btn btn-default' href='/'>Back to Homepage</a>
