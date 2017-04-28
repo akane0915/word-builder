@@ -40,4 +40,14 @@ describe('the word path', {:type => :feature}) do
     expect(page).to have_content('Create a personalized dictionary with words you would like to learn! Your Words: discover (verb)')
   end
 
+  it('tests the flashcards route') do
+    visit('/')
+    click_link('Test Yourself with Flashcards!')
+    expect(page).to have_content('Test Yourself with Flashcards!')
+    click_link('Show Definition')
+    expect(page).to have_content('Definition(s):')
+    click_link('Test Yourself with Flashcards!')
+    expect(page).to have_content('Test Yourself with Flashcards!')
+  end
+
 end

@@ -43,3 +43,9 @@ post('/words/:id') do
   @word.add_definition(@definition)
   erb(:success_definition)
 end
+
+get('/flashcard') do
+  @word = Word.randomize
+  @word_id = @word.id
+  erb(:flashcard)
+end

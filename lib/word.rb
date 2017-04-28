@@ -38,4 +38,10 @@ class Word
   def self.sort
     @@words.sort_by!{ |word| word.name.downcase }
   end
+
+  def self.randomize
+    random_number = Random.new
+    random_index = random_number.rand(@@words.length)
+    random_word = @@words[random_index]
+  end
 end #class Word end
